@@ -1,18 +1,9 @@
 <?php
 
-echo '<form method="POST" action="index.php?page=ActionsUsers&typeAction=inscription">
+echo '<form method="POST" action="index.php?page=ActionsUsers&typeAction=connexion">
 <div class="contenu">
     <div class="espace"></div>
     <div class="contenuLigne colonne">
-        <div class="ligne colonne centrer">
-            <div class="label">Nom de l\'utilisateur</div>
-            <input type="hidden" name="roleUser" value="1"/>
-            <input type="texte" name="nomUser" placeholder="Nom" class="libelle" required/>
-    </div>
-    <div class="ligne colonne centrer">
-            <div class="label">Prénom de l\'utilisateur</div>
-            <input type="texte" name="prenomUser" placeholder="Prénom" class="libelle" required/>
-    </div>
     <div class="ligne colonne centrer">
             <div class="label">Pseudo de l\'utilisateur</div>
             <input type="texte" name="pseudoUser" placeholder="Pseudo" class="libelle" required/>
@@ -20,10 +11,6 @@ echo '<form method="POST" action="index.php?page=ActionsUsers&typeAction=inscrip
     <div class="ligne colonne centrer">
             <div class="label">Mot de passe de l\'utilisateur</div>
             <input type="password" name="mdpUser" placeholder="Mot de passe" class="libelle" required/>
-    </div>
-    <div class="ligne colonne centrer">
-            <div class="label">Adresse mail de l\'utilisateur</div>
-            <input type="text" name="adresseMailUser" placeholder="Mail" class="libelle" required/>
     </div>
     </div>
     <div class="espace"></div>
