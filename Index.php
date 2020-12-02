@@ -33,7 +33,7 @@ $routes=[
 	"FormulaireConnexion"=>["PHP/VIEW/","FormulaireConnexion","Connexion"],
 	"ActionsUsers"=>["PHP/VIEW/","ActionsUsers","User"],
 
-	"ListeProduits"=>["PHP/VIEW/","FormulaireProduits","Liste des produits"],
+	"ListeProduits"=>["PHP/VIEW/","ListeProduits","Liste des produits"],
 	"FormulaireProduits"=>["PHP/VIEW/","FormulaireProduits","Formulaire des produits"],
 	"ActionsProduits"=>["PHP/VIEW/","ActionsProduits","Actions des produits"],
 
