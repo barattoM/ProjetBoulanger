@@ -99,6 +99,10 @@ footer {
 	margin-top: 1em;
 }
 
+.contenu{
+	height: 100%;
+}
+
 /**** Bouton ****/
 
 .ajouter {
