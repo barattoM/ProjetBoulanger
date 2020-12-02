@@ -102,4 +102,4 @@ INSERT INTO contenances (idContenance, idProduit, idIngredient) VALUES (4, 4, 3)
 INSERT INTO contenances (idContenance, idProduit, idIngredient) VALUES (5, 1, 4);
 
 INSERT INTO consultations (idConsultation, idUser, idProduit) VALUES (1, 1, 3);
-INSERT INTO consultations (idConsultation, idUser, idProduit) VALUES (1, 1, 4);
+INSERT INTO consultations (idConsultation, idUser, idProduit) VALUES (2, 2, 4);
