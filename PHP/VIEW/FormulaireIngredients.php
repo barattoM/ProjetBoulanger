@@ -69,3 +69,38 @@ else if($mode=="modif")
     </div>
   </form>';
 } 
+
+
+
+
+else if($mode=="delete")
+{
+    
+    $idRecherche=$_GET['id'];
+    $choix=IngredientsManager::findById($idRecherche);
+
+    echo '
+    <form method="POST" action="index.php?page=actionIngredients&mode=delete">
+
+
+    <div class="contenu">
+      <div class="espace"></div>
+      <div class="contenuLigne colonne">
+        <div class="ligne colonne centrer">
+          <div class="label">libelle</div>
+          <input type="text" class="libelle" name="Libelle" value="'.$id->getLibelleIngredient().'"disabled/>
+        </div>
+
+      </div>
+      <div class="espace"></div>
+    </div>
+    <div class="contenuLigne">
+      <div class="espace"></div>
+      <div class="colonne">
+          <a href="index.php"><div class="retour centrer">Retour</div></a>
+          <input type="submit" name="Supprimer" class="ajouter centrer" value="Supprimer"/>
+      </div>
+      <div class="espace"></div>
+    </div>
+  </form>';
+} 
