@@ -32,4 +32,4 @@ switch ($_GET['mode']) {
         }
 }
 
-//header("location:index.php?page=ListesProduits");
+header("location:index.php?page=ListesProduits");
