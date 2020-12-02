@@ -48,7 +48,7 @@ class Produits
 		return $this->_prixProduit;
 	}
 
-	public function setPrixProduit($prixProduit)
+	public function setPrixProduit(int $prixProduit)
 	{
 		$this->_prixProduit=$prixProduit;
 	}

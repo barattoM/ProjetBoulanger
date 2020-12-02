@@ -44,12 +44,12 @@ $idProduit = $choix->getIdProduit();
 
         <div class="ligne colonne centrer">
           <div class="label">Date de peremption : </div>
-          <input type="date" class="libelle" name="dateDePeremption" <?php if($mode != "ajout") echo 'value= "'.$choix->getLibelleProduit().'"';if($mode=="detail" || $mode=="delete") echo '" disabled'; ?>/>
+          <input type="date" class="libelle" name="datePeremptionProduit" <?php if($mode != "ajout") echo 'value= "'.$choix->getDatePeremptionProduit().'"';if($mode=="detail" || $mode=="delete") echo '" disabled'; ?>/>
         </div>
 
         <div class="ligne colonne centrer">
           <div class="label">Prix : </div>
-          <input class="libelle" name="Prix" <?php if($mode != "ajout") echo 'value= "'.$choix->getLibelleProduit().'"';if($mode=="detail" || $mode=="delete") echo '" disabled'; ?>/>
+          <input class="libelle" name="PrixProduit" <?php if($mode != "ajout") echo 'value= "'.$choix->getPrixProduit().'"';if($mode=="detail" || $mode=="delete") echo '" disabled'; ?>/>
         </div>
 
     </div>

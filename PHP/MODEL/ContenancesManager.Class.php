@@ -54,4 +54,20 @@ class ContenancesManager
 		}
 		return $liste;
 	}
+
+	public static function getByProduit(Produits $produit)
+	{
+ 		$db=DbConnect::getDb();
+		$liste = [];
+		$q = $db->query("SELECT * FROM Contenances WHERE idProduit=".$produit->getIdProduit());
+		while($donnees = $q->fetch(PDO::FETCH_ASSOC))
+		{
+			if($donnees != false)
+			{
+				$liste[] = new Contenances($donnees);
+			}
+		}
+		return $liste;
+	}
+
 }

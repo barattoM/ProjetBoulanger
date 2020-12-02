@@ -54,4 +54,19 @@ class ConsultationsManager
 		}
 		return $liste;
 	}
+
+	public static function getByProduit(Produits $produit)
+	{
+ 		$db=DbConnect::getDb();
+		$liste = [];
+		$q = $db->query("SELECT * FROM Consultations WHERE idProduit=".$produit->getIdProduit());
+		while($donnees = $q->fetch(PDO::FETCH_ASSOC))
+		{
+			if($donnees != false)
+			{
+				$liste[] = new Consultations($donnees);
+			}
+		}
+		return $liste;
+	}
 }
