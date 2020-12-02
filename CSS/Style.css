@@ -1,4 +1,9 @@
 /****  GENERAL ****/
+:root {
+	--couleurPolice: #434748;
+	--couleurHoverOrange: #FD5300;
+}
+
 html, body {
 	margin : 0;
 	padding : 0;
@@ -13,3 +18,12 @@ img, video {
 	width : 100%;
 }
 
+.colonne {
+	flex-direction: column;
+}
+
+/* HEADER */
+
+.titre {
+	flex: 10;
+}
