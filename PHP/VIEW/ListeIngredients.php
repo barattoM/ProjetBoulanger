@@ -23,7 +23,7 @@ echo '
 <div class="espace"></div>
 <a href="index.php?page=FormulaireIngredients&mode=modif&id='.$unIngredient->getIdIngredient().'"><div class="modifier centrer">Modifier</div></a>
 <div class="espace"></div>
-<a href="index.php?page=FormulaireIngredients&mode=delete&id='.$unIngredient->getIdIngredient().'"><div class="supprimer centrer">Supprimer</div></a>
+<a href="index.php?page=ActionIngredients&mode=delete&id='.$unIngredient->getIdIngredient().'"><div class="supprimer centrer">Supprimer</div></a>
 </div>
 <div class="espace"></div>';      
 }
