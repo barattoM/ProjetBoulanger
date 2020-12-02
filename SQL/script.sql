@@ -80,27 +80,54 @@ ALTER TABLE boulangerie.consultations ADD CONSTRAINT consultations_produits_FK F
 -- Insertion dans l'ordre
 
 INSERT INTO produits (idProduit, libelleProduit, datePeremptionProduit, prixProduit) VALUES (1, 'baguette', '2020-12-15', 1);
-INSERT INTO produits (idProduit, libelleProduit, datePeremptionProduit, prixProduit) VALUES (2, 'chocolatine', '2020-12-12', 2);
-INSERT INTO produits (idProduit, libelleProduit, datePeremptionProduit, prixProduit) VALUES (3, 'croissant', '2025-12-16', 200);
-INSERT INTO produits (idProduit, libelleProduit, datePeremptionProduit, prixProduit) VALUES (4, 'sandwich', '2020-12-11', 5);
+(2, 'chocolatine', '2020-12-12', 2);
+(3, 'croissant', '2025-12-16', 200);
+(4, 'sandwich', '2020-12-11', 5);
 
-INSERT INTO ingredients (idIngredient, libelleIngredient) VALUES (1, 'farine');
-INSERT INTO ingredients (idIngredient, libelleIngredient) VALUES (2, 'oeuf');
-INSERT INTO ingredients (idIngredient, libelleIngredient) VALUES (3, 'beurre');
-INSERT INTO ingredients (idIngredient, libelleIngredient) VALUES (4, 'sucre');
+INSERT INTO ingredients (idIngredient, libelleIngredient) VALUES
+(1, 'farine');
+(2, 'oeuf');
+(3, 'beurre');
+(4, 'sucre');
 
-INSERT INTO users (idUser, nomUser, prenomUser, pseudoUser, mdpUser, adresseMailUser, roleUser) VALUES (1, 'Cugny', 'Maxime', 'Maxina', 'Glrv56zc', 'maxime.cgn@gmail.com', 1);
-INSERT INTO users (idUser, nomUser, prenomUser, pseudoUser, mdpUser, adresseMailUser, roleUser) VALUES (2, 'Baratto', 'Marvine', 'Marvina', 'cookies', 'baratto.m@gmail.com', 2);
+INSERT INTO users (idUser, nomUser, prenomUser, pseudoUser, mdpUser, adresseMailUser, roleUser) VALUES
+(1, 'Cugny', 'Maxime', 'Maxina', 'Glrv56zc', 'maxime.cgn@gmail.com', 1);
+(2, 'Baratto', 'Marvine', 'Marvina', 'cookies', 'baratto.m@gmail.com', 2);
 
-INSERT INTO traductions (idTraduction, codeTexte, codeLangue, texte) VALUES (null, 'accueil', 'FR', 'Bienvenue');
-INSERT INTO traductions (idTraduction, codeTexte, codeLangue, texte) VALUES (null, 'accueil', 'EN', 'Welcome');
-INSERT INTO traductions (idTraduction, codeTexte, codeLangue, texte) VALUES (null, )
+INSERT INTO traductions (idTraduction, codeTexte, codeLangue, texte) VALUES
+(null, 'accueil', 'FR', 'Bienvenue'),
+(null, 'accueil', 'EN', 'Welcome'),
+(null, 'inscription', 'FR', 'Inscription'),
+(null, 'inscription', 'EN', 'Register'),
+(null, 'connexion', 'FR', 'Connexion'),
+(null, 'connexion', 'EN', 'Log in'),
+(null, 'ajouter', 'FR', 'Ajouter'),
+(null, 'ajouter', 'EN', 'Add'),
+(null, 'libelle', 'FR', 'Libelle'),
+(null, 'libelle', 'EN', 'Product name'),
+(null, 'details', 'FR', 'Détails'),
+(null, 'details', 'EN', 'Details'),
+(null, 'modifier', 'FR', 'Modifier'),
+(null, 'modifier', 'EN', 'Edit'),
+(null, 'supprimer', 'FR', 'Supprimer'),
+(null, 'supprimer', 'EN', 'Delete'),
+(null, 'retour', 'FR', 'Retour'),
+(null, 'retour', 'EN', 'Back'),
+(null, 'envoyer', 'FR', 'Envoyer'),
+(null, 'envoyer', 'EN', 'Send'),
+(null, 'adresse', 'FR', 'Adresse'),
+(null, 'adresse', 'EN', 'Adress'),
+(null, 'reseaux', 'FR', 'Réseaux sociaux'),
+(null, 'reseaux', 'EN', 'Social networks');
 
-INSERT INTO contenances (idContenance, idProduit, idIngredient) VALUES (1, 1, 2);
-INSERT INTO contenances (idContenance, idProduit, idIngredient) VALUES (2, 2, 2);
-INSERT INTO contenances (idContenance, idProduit, idIngredient) VALUES (3, 3, 1);
-INSERT INTO contenances (idContenance, idProduit, idIngredient) VALUES (4, 4, 3);
-INSERT INTO contenances (idContenance, idProduit, idIngredient) VALUES (5, 1, 4);
 
-INSERT INTO consultations (idConsultation, idUser, idProduit) VALUES (1, 1, 3);
-INSERT INTO consultations (idConsultation, idUser, idProduit) VALUES (2, 2, 4);
+INSERT INTO contenances (idContenance, idProduit, idIngredient) VALUES
+(1, 1, 2);
+(2, 2, 2);
+(3, 3, 1);
+(4, 4, 3);
+(5, 1, 4);
+
+INSERT INTO consultations (idConsultation, idUser, idProduit) VALUES
+(1, 1, 3);
+(2, 2, 4);

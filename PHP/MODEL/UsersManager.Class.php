@@ -63,18 +63,23 @@ class UsersManager
 		return $liste;
 	}
 	public static function findByPseudo($pseudo)
-	{
- 		$db=DbConnect::getDb();
-		$pseudo = (int) $pseudo;
-		$q=$db->query("SELECT * FROM Users WHERE pseudoUser =".$pseudo);
-		$results = $q->fetch(PDO::FETCH_ASSOC);
-		if($results != false)
-		{
-			return new Users($results);
-		}
-		else
-		{
-			return false;
-		}
-	}
+    {
+		$db = DbConnect::getDb();
+        if (!in_array(";",str_split( $pseudo))) // s'il n'y a pas de ; , je lance la requete
+        {
+            $q = $db->query("SELECT * FROM Users WHERE pseudoUser ='" . $pseudo . "'");
+            $results = $q->fetch(PDO::FETCH_ASSOC);
+            if ($results != false)
+            {
+                return new Users($results);
+            }
+            else
+            {
+                return false;
+            }}
+        else
+        {
+            return false;
+        }
+    }
 }
