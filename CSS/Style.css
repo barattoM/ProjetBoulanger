@@ -12,6 +12,7 @@ html, body {
 	background-color: whitesmoke;
 }
 
+
 div, header, footer, nav, article, input, a{
 	display : flex;
 	flex : 1;
@@ -70,10 +71,12 @@ header, footer {
 
 /******************** FOOTER ************************/
 footer {
-	position: sticky;
-	left: 0;
-	bottom: 0;
+	position: fixed;
+	bottom:0;
 	width: 100%;
+}
+.footer {
+visibility: hidden;
 }
 
 
