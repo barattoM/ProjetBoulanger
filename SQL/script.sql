@@ -92,8 +92,9 @@ INSERT INTO ingredients (idIngredient, libelleIngredient) VALUES (4, 'sucre');
 INSERT INTO users (idUser, nomUser, prenomUser, pseudoUser, mdpUser, adresseMailUser, roleUser) VALUES (1, 'Cugny', 'Maxime', 'Maxina', 'Glrv56zc', 'maxime.cgn@gmail.com', 1);
 INSERT INTO users (idUser, nomUser, prenomUser, pseudoUser, mdpUser, adresseMailUser, roleUser) VALUES (2, 'Baratto', 'Marvine', 'Marvina', 'cookies', 'baratto.m@gmail.com', 2);
 
-INSERT INTO traductions (idTraduction, codeTexte, codeLangue, texte) VALUES (1, 'accueil', 'FR', 'Bienvenue');
-INSERT INTO traductions (idTraduction, codeTexte, codeLangue, texte) VALUES (2, 'accueil', 'EN', 'Welcome');
+INSERT INTO traductions (idTraduction, codeTexte, codeLangue, texte) VALUES (null, 'accueil', 'FR', 'Bienvenue');
+INSERT INTO traductions (idTraduction, codeTexte, codeLangue, texte) VALUES (null, 'accueil', 'EN', 'Welcome');
+INSERT INTO traductions (idTraduction, codeTexte, codeLangue, texte) VALUES (null, )
 
 INSERT INTO contenances (idContenance, idProduit, idIngredient) VALUES (1, 1, 2);
 INSERT INTO contenances (idContenance, idProduit, idIngredient) VALUES (2, 2, 2);
