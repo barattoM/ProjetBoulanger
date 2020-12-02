@@ -9,6 +9,7 @@ echo '<form method="POST action="index.php?page=ActionsUsers&typeAction=inscript
             <input type="texte" name="nomUser" placeholder="Nom" class="libelle" required/>
     </div>
     
+    </div>
     <div class="espace"></div>
 </div>
 ';

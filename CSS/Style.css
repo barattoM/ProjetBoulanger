@@ -24,6 +24,7 @@ div, header, footer, nav, article, input, a {
 
 a {
 	text-decoration: none;
+	color:whitesmoke;
 }
 
 img, video {
@@ -68,7 +69,7 @@ header, footer {
 
 /******************** FOOTER ************************/
 footer {
-	position: static;
+	position: sticky;
 	left: 0;
 	bottom: 0;
 	width: 100%;
