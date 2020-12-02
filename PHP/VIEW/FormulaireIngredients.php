@@ -11,8 +11,8 @@ if ($mode=="ajout")
         <div class="espace"></div>
         <div class="contenuLigne colonne">
           <div class="ligne colonne centrer">
-			<div class="label">nom</div>
-			<input type="text" name="nomUser" placeholder="Nom" required class="libelle"/>
+			<div class="label">libelle</div>
+			<input type="text" name="libelle" placeholder="Nom" required class="libelle"/>
 		  </div>
 		  <div class="ligne colonne centrer">
 			<div class="label">nom</div>
