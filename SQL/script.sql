@@ -118,7 +118,12 @@ INSERT INTO traductions (idTraduction, codeTexte, codeLangue, texte) VALUES
 (null, 'adresse', 'FR', 'Adresse'),
 (null, 'adresse', 'EN', 'Adress'),
 (null, 'reseaux', 'FR', 'Réseaux sociaux'),
-(null, 'reseaux', 'EN', 'Social networks');
+(null, 'reseaux', 'EN', 'Social networks'),
+(null, 'peremption', 'FR', 'Date de peremption'),
+(null, 'peremption', 'EN', 'Expiration date'),
+(null, 'prix', 'FR', 'Prix'),
+(null, 'prix', 'EN', 'Price'),
+
 
 
 INSERT INTO contenances (idContenance, idProduit, idIngredient) VALUES
