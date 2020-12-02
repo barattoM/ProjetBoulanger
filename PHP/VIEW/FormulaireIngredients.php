@@ -38,8 +38,9 @@ if ($mode=="ajout")
 }
 else if($mode=="modif")
 {
+    
     $idRecherche=$_GET['id'];
-    $id=IngredientsManager::findById($idRecherche);
+    $choix=IngredientsManager::findById($idRecherche);
 
     echo '
     <form method="POST" action="index.php?page=actionIngredients&mode=modif">
@@ -50,9 +51,8 @@ else if($mode=="modif")
       <div class="contenuLigne colonne">
         <div class="ligne colonne centrer">
           <div class="label">libelle</div>
-          <input type="text" name="libelle" placeholder="Nom" required class="libelle"/>
-          <input type="hidden" name="id" value="'.$id->getIdIngredient().'"/>
-          <input type="text" class="libelle" name="Libelle" value="'.$id->getLibelleIngredient().'"/>
+          <input type="hidden" name="id" value="'.$choix->getIdIngredient().'"/>
+          <input type="text" class="libelle" name="Libelle" value="'.$choix->getLibelleIngredient().'"/>
           
         </div>
 
@@ -69,34 +69,3 @@ else if($mode=="modif")
     </div>
   </form>';
 } 
-
-
-else if ($mode=="detail")
-{
-    $idRecherche=$_GET['id'];
-    $id=IngredientsManager::findById($idRecherche);
-
-    echo '
-    <div class="contenu">
-      <div class="espace"></div>
-      <div class="contenuLigne colonne">
-        <div class="ligne colonne centrer">
-          <div class="label">libelle</div>
-          <input type="text" class="libelle" name="Libelle" value="'.$id->getLibelleIngredient().'"disabled/>
-        </div>
-
-      </div>
-      <div class="espace"></div>
-    </div>
-    <div class="contenuLigne">
-      <div class="espace"></div>
-      <div class="colonne">
-          <a href="index.php"><div class="retour centrer">Retour</div></a>
-          <input type="submit" name="submit" class="ajouter centrer"/>
-      </div>
-      <div class="espace"></div>
-    </div>
-  </form>
- ';
-
-}
