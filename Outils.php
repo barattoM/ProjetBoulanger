@@ -20,7 +20,7 @@ function crypte($mot)
 function texte($codeTexte)
 {
 	global $lang; //on appel la variable globale
-	return TexteManager::findByCodes($lang, $codeTexte);
+	return TraductionsManager::findByCodes($lang, $codeTexte);
 }
 
 function afficherPage($page)
