@@ -21,12 +21,12 @@ $lang=isset($_SESSION['lang']) ? $_SESSION['lang'] : 'FR';
 
 $routes=[
 	"default"=>["PHP/VIEW/","accueil","Accueil"],
-	"TestconsultationsManager"=>["PHP/VIEW/","TestconsultationsManager","Test de consultations"],
-	"TestcontenancesManager"=>["PHP/VIEW/","TestcontenancesManager","Test de contenances"],
-	"TestingredientsManager"=>["PHP/VIEW/","TestingredientsManager","Test de ingredients"],
-	"TestproduitsManager"=>["PHP/VIEW/","TestproduitsManager","Test de produits"],
-	"TesttraductionsManager"=>["PHP/VIEW/","TesttraductionsManager","Test de traductions"],
-	"TestusersManager"=>["PHP/VIEW/","TestusersManager","Test de users"],
+	"TestconsultationsManager"=>["PHP/MODEL/TESTMANAGER/","TestconsultationsManager","Test de consultations"],
+	"TestcontenancesManager"=>["PHP/MODEL/TESTMANAGER/","TestcontenancesManager","Test de contenances"],
+	"TestingredientsManager"=>["PHP/MODEL/TESTMANAGER/","TestingredientsManager","Test de ingredients"],
+	"TestproduitsManager"=>["PHP/MODEL/TESTMANAGER/","TestproduitsManager","Test de produits"],
+	"TesttraductionsManager"=>["PHP/MODEL/TESTMANAGER/","TesttraductionsManager","Test de traductions"],
+	"TestusersManager"=>["PHP/MODEL/TESTMANAGER/","TestusersManager","Test de users"],
 ];
 
 if(isset($_GET["page"]))
