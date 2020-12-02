@@ -56,4 +56,19 @@ class ProduitsManager
 		}
 		return $liste;
 	}
+	public static function findByIngredient($ingredient)
+	{
+ 		$db=DbConnect::getDb();
+		$ingredient = (int) $ingredient;
+		$q=$db->query("SELECT * FROM Produits WHERE libelleIngredient =".$ingredient);
+		$results = $q->fetch(PDO::FETCH_ASSOC);
+		if($results != false)
+		{
+			return new Produits($results);
+		}
+		else
+		{
+			return false;
+		}
+	}
 }
