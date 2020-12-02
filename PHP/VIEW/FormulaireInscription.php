@@ -25,6 +25,7 @@ echo '<form method="POST" action="index.php?page=ActionsUsers&typeAction=inscrip
             <div class="label">Adresse mail de l\'utilisateur</div>
             <input type="text" name="adresseMailUser" placeholder="Mail" class="libelle" required/>
     </div>
+    
     </div>
     <div class="espace"></div>
 </div>

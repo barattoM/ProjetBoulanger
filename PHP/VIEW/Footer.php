@@ -12,3 +12,5 @@
         <h3>Réseaux sociaux</h3>
       </div>
 </footer>
+</body>
+</html>

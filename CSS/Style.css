@@ -12,10 +12,11 @@ html, body {
 	background-color: whitesmoke;
 }
 
-div, header, footer, nav, article, input, a {
+div, header, footer, nav, article, input, a{
 	display : flex;
 	flex : 1;
 }
+
 
 .centrer {
 	align-items: center;
@@ -99,9 +100,6 @@ footer {
 	margin-top: 1em;
 }
 
-.contenu{
-	height: 100%;
-}
 
 /**** Bouton ****/
 
