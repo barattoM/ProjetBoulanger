@@ -27,4 +27,9 @@ if ($typeAction == "inscription") {
         echo "Le pseudo n'existe pas";
         header("refresh:3;url=index.php?page=default");
     }
+} else if ($typeAction == "deconnexion")
+{
+    session_destroy();
+    echo " deconnexion";
+    header("refresh:3;url=index.php?page=default");
 }
