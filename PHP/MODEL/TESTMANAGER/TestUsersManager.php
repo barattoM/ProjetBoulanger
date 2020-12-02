@@ -8,7 +8,7 @@ var_dump($obj);
 echo $obj->toString();
 
 echo "ajout de l'objet". "<br>";
-$newObj = new Users(["nomUser" => "([value 1])", "prenomUser" => "([value 2])", "pseudoUser" => "([value 3])", "mdpUser" => "([value 4])", "adresseMailUser" => "([value 5])", "roleUser" => "([value 6])"]);
+$newObj = new Users(["nomUser" => "toto", "prenomUser" => "toto", "pseudoUser" => "test", "mdpUser" => "123", "adresseMailUser" => "dada@da", "roleUser" => 1]);
 var_dump(UsersManager::add($newObj));
 
 echo "Liste des objets" . "<br>";
@@ -19,7 +19,7 @@ foreach ($array as $unObj)
 }
 
 echo "on met à jour l'id 1" . "<br>";
-$obj->setnomUser("[(Value)]");
+$obj->setnomUser("tata");
 UsersManager::update($obj);
 $objUpdated = UsersManager::findById(1);
 echo "Liste des objets" . "<br>";
@@ -30,7 +30,7 @@ foreach ($array as $unObj)
 }
 
 echo "on supprime un objet". "<br>";
-$obj = UsersManager::findById(1);
+$obj = UsersManager::findById(3);
 UsersManager::delete($obj);
 echo "Liste des objets" . "<br>";
 $array = UsersManager::getList();
