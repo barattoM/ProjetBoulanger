@@ -19,8 +19,6 @@ echo '
 <div class="contenuLigne">
 <div class="libelle centrer">'.$unIngredient->getLibelleIngredient().'</div>
 <div class="espace"></div>
-<a href="index.php?page=FormulaireIngredients&mode=detail&id='.$unIngredient->getIdIngredient().'"><div class="detail centrer">Detail</div></a>
-<div class="espace"></div>
 <a href="index.php?page=FormulaireIngredients&mode=modif&id='.$unIngredient->getIdIngredient().'"><div class="modifier centrer">Modifier</div></a>
 <div class="espace"></div>
 <a href="index.php?page=ActionIngredients&mode=delete&id='.$unIngredient->getIdIngredient().'"><div class="supprimer centrer">Supprimer</div></a>
