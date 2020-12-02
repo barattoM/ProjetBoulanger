@@ -123,7 +123,18 @@ INSERT INTO traductions (idTraduction, codeTexte, codeLangue, texte) VALUES
 (null, 'peremption', 'EN', 'Expiration date'),
 (null, 'prix', 'FR', 'Prix'),
 (null, 'prix', 'EN', 'Price'),
-
+(null, 'Nom', 'FR', 'Nom'),
+(null, 'Nom', 'EN', 'Name'),
+(null, 'Prenom', 'FR', 'Prénom'),
+(null, 'Prenom', 'EN', 'First name'),
+(null, 'Pseudo', 'FR', 'Pseudo'),
+(null, 'pseudo', 'EN', 'Pseudo')
+(null, 'mdp', 'FR', 'Mot de passe'),
+(null, 'mdp', 'EN', 'Password'),
+(null, 'mail', 'FR', 'Adresse mail'),
+(null, 'mail', 'EN', 'Mail')
+(null, 'deconnexion', 'FR', 'Deconnexion'),
+(null, 'deconnexion', 'EN', 'Log out');
 
 
 INSERT INTO contenances (idContenance, idProduit, idIngredient) VALUES
