@@ -1,32 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-<head>
-	<meta charset="utf-8">
-	<title>Titre de la page</title>
-	<link rel="stylesheet" href="../CSS/Style.css">
-	<script src="../JS/script.js"></script>
-</head>
-<body>
-	<header>
-		<img src="../IMG/logoBoulanger.png" alt="Logo de la boulangerie">
-		<div class="titre">Accueil</div>
-		<div class="colonne">
-			<img src="../IMG/english.png" alt="Petit soldat anglais">
-			<img src="../IMG/french.png" alt="Petit marin français">
-		</div>
-		<div class="colonne">
-			<a href="index.php?page=FormulaireInscription"><div class="button">
-				Inscription
-			</div></a>
-			<a href="index.php?page=FormulaireConnexion"><div class="button">
-				Connexion
-			</div></a>
-		</div>
-	</header>
-	<nav>
+  <head>
+    <meta charset="utf-8" />
+    <title>Titre de la page</title>
+    <link rel="stylesheet" href="../CSS/Style.css" />
+    <script src="../JS/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="image">
+        <img src="../IMG/logoBoulanger.png" alt="Logo de la boulangerie" />
+      </div>
+      <div class="titre centrer"><h1>Accueil</h1></div>
+      <div class="centrer">
+        <a href=""
+          ><img src="../IMG/english.png" alt="Petit soldat anglais"
+        /></a>
+        <a href=""
+          ><img src="../IMG/french.png" alt="Petit marin français"
+        /></a>
+      </div>
+      <div class="colonne centrer">
+        <a href="index.php?page=FormulaireInscription"
+          ><div class="button centrer">Inscription</div></a
+        >
+        <a href="index.php?page=FormulaireConnexion"
+          ><div class="button centrer">Connexion</div></a
+        >
+      </div>
+    </header>
 
-	</nav>
-	<!-- Le reste du contenu -->
-	<footer></footer>
-</body>
+    <div class="contenu colonne">
+      <div class="contenuLigne">
+        <div class="espace"></div>
+        <div class="ajouter centrer">Ajouter</div>
+        <div class="espace"></div>
+      </div>
+      <div>
+        <div class="espace"></div>
+        <div class="contenuLigne">
+          <div class="libelle centrer">Libelle</div>
+          <div class="espace"></div>
+          <div class="detail centrer">Détails</div>
+          <div class="espace"></div>
+          <div class="modifier centrer">Modifier</div>
+          <div class="espace"></div>
+          <div class="supprimer centrer">Supprimer</div>
+        </div>
+        <div class="espace"></div>
+      </div>
+    </div>
+
+    <div class="contenuLigne">
+      <div class="espace"></div>
+      <a href="index.php"><div class="retour centrer">Retour</div></a>
+      <div class="espace"></div>
+	</div>
+	
+    <form method="POST" action="index.php">
+      <div class="contenu">
+        <div class="espace"></div>
+        <div class="contenuLigne colonne">
+          <div class="ligne colonne centrer">
+			<div class="label">nom</div>
+			<input type="text" name="nomUser" placeholder="Nom" required class="libelle"/>
+		  </div>
+		  <div class="ligne colonne centrer">
+			<div class="label">nom</div>
+			<input type="text" name="nomUser" placeholder="Nom" required class="libelle"/>
+          </div>
+        </div>
+        <div class="espace"></div>
+	  </div>
+	  <div class="contenuLigne">
+		<div class="espace"></div>
+		<div class="colonne">
+			<a href="index.php"><div class="retour centrer">Retour</div></a>
+			<input type="submit" name="submit" class="ajouter centrer"/>
+		</div>
+		<div class="espace"></div>
+	  </div>
+	</form>
+	
+    <footer>
+      <div class="titre centrer">
+        <h3>Contact</h3>
+      </div>
+      <div class="titre centrer">
+        <h3>FAQ</h3>
+      </div>
+      <div class="titre centrer">
+        <h3>Adresse</h3>
+      </div>
+      <div class="titre centrer">
+        <h3>Réseaux sociaux</h3>
+      </div>
+    </footer>
+  </body>
 </html>

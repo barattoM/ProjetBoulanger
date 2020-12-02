@@ -7,11 +7,23 @@
 html, body {
 	margin : 0;
 	padding : 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color:var(--couleurPolice);
+	background-color: whitesmoke;
 }
 
-div, header, footer, nav, article {
+div, header, footer, nav, article, input, a {
 	display : flex;
 	flex : 1;
+}
+
+.centrer {
+	align-items: center;
+	justify-content: center;
+}
+
+a {
+	text-decoration: none;
 }
 
 img, video {
@@ -22,8 +34,139 @@ img, video {
 	flex-direction: column;
 }
 
-/* HEADER */
+/**************** HEADER ******************/
+header, footer {
+	background-color: var(--couleurPolice);
+}
 
 .titre {
 	flex: 10;
+	color: var(--couleurHoverOrange);
+}
+
+.image {
+	flex: 2;
+}
+
+/*************** BOUTON ****************/
+
+.button {
+	background:linear-gradient(to bottom, #e8f7ec 5%, #979e93 100%);
+    background-color:#979e93;
+    border-radius:18px;
+    border:1px solid #979e93;
+	padding:0.5em;
+	height: 3em;
+    text-shadow:0px 1px 0px #979e93;
+    color:black;
+}
+
+.button:hover {
+	background: var(--couleurHoverOrange);
+	color: white;
+}
+
+/******************** FOOTER ************************/
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+
+/***************** CONTENU ******************/
+.libelle {
+	background:linear-gradient(to bottom, #e8f7ec 5%, #979e93 100%);
+    background-color:#979e93;
+    border-radius:18px;
+    border:1px solid #979e93;
+	padding:0.5em;
+    text-shadow:0px 1px 0px #979e93;
+	color:black;
+	font-size: larger;
+}
+
+.contenuLigne {
+	flex: 5;
+	margin-top: 2.5em;
+}
+
+
+.label {
+	font-size: 1.5em;
+	margin-top: 1em;
+}
+
+/**** Bouton ****/
+
+.ajouter {
+	background:#52943e;
+    border-radius:18px;
+    border:1px solid #979e93;
+	padding:0.5em;
+	text-shadow:0px 1px 0px #979e93;
+	font-size: larger;
+}
+
+.ajouter:hover {
+	background-color: #434748;
+	color: whitesmoke;
+	
+}
+
+.detail {
+	background:var(--couleurHoverOrange);
+    border-radius:18px;
+    border:1px solid #979e93;
+	padding:0.5em;
+	text-shadow:0px 1px 0px #979e93;
+	font-size: larger;
+}
+
+.detail:hover {
+	background-color: #434748;
+	color: whitesmoke;
+}
+
+.modifier {
+	background: #4b93ff;
+    border-radius:18px;
+    border:1px solid #979e93;
+	padding:0.5em;
+	text-shadow:0px 1px 0px #979e93;
+	font-size: larger;
+}
+
+.modifier:hover {
+	background-color: #434748;
+	color: whitesmoke;
+}
+
+.supprimer {
+	background:rgb(218, 41, 41);
+    border-radius:18px;
+    border:1px solid #979e93;
+	padding:0.5em;
+	text-shadow:0px 1px 0px #979e93;
+	font-size: larger;
+}
+
+.supprimer:hover {
+	background-color: #434748;
+	color: whitesmoke;
+}
+
+.retour {
+	background:rgb(44, 42, 42);
+    border-radius:18px;
+    border:1px solid #979e93;
+	padding:0.5em;
+	text-shadow:0px 1px 0px #979e93;
+	font-size: larger;
+	color: whitesmoke;
+}
+
+.retour:hover {
+	background-color: #434748;
 }
