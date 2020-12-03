@@ -83,17 +83,27 @@ INSERT INTO produits (idProduit, libelleProduit, datePeremptionProduit, prixProd
 (1, 'baguette', '2020-12-15', 1),
 (2, 'chocolatine', '2020-12-12', 2),
 (3, 'croissant', '2025-12-16', 200),
-(4, 'sandwich', '2020-12-11', 5);
+(4, 'sandwich', '2020-12-11', 5),
+(5, 'cookie', '2020-12-12', 4),
+(6, 'croissantine', '2020-12-13', 3),
+(7, 'pain', '2020-12-10', 5);
 
 INSERT INTO ingredients (idIngredient, libelleIngredient) VALUES
 (1, 'farine'),
 (2, 'oeuf'),
 (3, 'beurre'),
-(4, 'sucre');
+(4, 'sucre'),
+(5, 'levure'),
+(6, 'chocolat'),
+(7, 'sel'),
+(8, 'garnitures'),
+(9, 'levain');
 
 INSERT INTO users (idUser, nomUser, prenomUser, pseudoUser, mdpUser, adresseMailUser, roleUser) VALUES
 (1, 'Cugny', 'Maxime', 'Maxina', 'Glrv56zc', 'maxime.cgn@gmail.com', 1),
-(2, 'Baratto', 'Marvine', 'Marvina', 'cookies', 'baratto.m@gmail.com', 2);
+(2, 'Baratto', 'Marvine', 'Marvina', 'cookies', 'baratto.m@gmail.com', 2),
+(3, 'Aarous', 'Sofiane', 'Sofia', '1234', 'sofiane.a@gmail.com', 3),
+(4, 'Laforce', 'Amanda', 'Armando', 'motdepasse', 'amanda.l@gmail.com', 1);
 
 INSERT INTO traductions (idTraduction, codeTexte, codeLangue, texte) VALUES
 
