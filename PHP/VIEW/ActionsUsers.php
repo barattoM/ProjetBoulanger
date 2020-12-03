@@ -6,30 +6,34 @@ if ($typeAction == "inscription") {
     if ($p == false) {
         $user = new Users(["nomUser" => $_POST['nomUser'], "prenomUser" => $_POST['prenomUser'], "pseudoUser" => $_POST['pseudoUser'], "mdpUser" => crypte($_POST['mdpUser']), "adresseMailUser" => $_POST['adresseMailUser'], "roleUser" => $_POST['roleUser']]);
         UsersManager::add($user);
-        header("refresh:3;url=index.php?page=FormulaireConnexion");
+        header("location:index.php?page=FormulaireConnexion");
     } else {
-        echo "Le pseudo existe déjà";
-        header("refresh:3;url=index.php?page=FormulaireInscription");
+        echo texte('existedeja');
+        header("location:index.php?page=FormulaireInscription");
     }
 
 } else if ($typeAction == "connexion") {
     $p = UsersManager::findByPseudo($_POST['pseudoUser']);
     if ($p != false) {
         if (crypte($_POST['mdpUser']) == $p->getMdpUser()) {
-            echo "Connexion réussie";
+            echo texte('connexionreussi');
             $_SESSION['user'] = $p;
-            header("refresh:3;url=index.php?page=ListeProduits");
+            if (isset($_SESSION['user'])&& $_SESSION['user']->getRoleUser()==3){
+            header("location:index.php?page=ChoixListe");
+            } else {
+                header("location:index.php?page=accueil");
+            }
         } else {
-            echo "Le mot de passe est incorrect";
-            header("refresh:3;url=index.php?page=FormulaireConnexion");
+            echo texte('incorrectmdp');
+            header("location:index.php?page=FormulaireConnexion");
         }
     } else {
-        echo "Le pseudo n'existe pas";
-        header("refresh:3;url=index.php?page=FormulaireConnexion");
+        echo texte('pseudonone');
+        header("location:index.php?page=FormulaireConnexion");
     }
 } else if ($typeAction == "deconnexion")
 {
     session_destroy();
-    echo " deconnexion";
-    header("refresh:3;url=index.php?page=FormulaireConnexion");
+    echo texte('deconnexion');
+    header("location:index.php?page=FormulaireConnexion");
 }

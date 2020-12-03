@@ -25,8 +25,13 @@ div, header, footer, nav, article, input, a{
 }
 
 a {
+	color: black;
 	text-decoration: none;
+	
+}
+a:hover {
 	color:whitesmoke;
+	transition: 1s;
 }
 
 img, video {
@@ -37,6 +42,16 @@ img, video {
 	flex-direction: column;
 }
 
+.espace {
+	flex: 0.2;
+}
+
+.block {
+	display: block;
+}
+.espaceH{
+	height: 9em;
+}
 /**************** HEADER ******************/
 header, footer {
 	background-color: var(--couleurPolice);
@@ -61,7 +76,8 @@ header, footer {
 	padding:0.5em;
 	height: 3em;
     text-shadow:0px 1px 0px #979e93;
-    color:black;
+	color:black;
+	width:7em;
 }
 
 .button:hover {
@@ -74,9 +90,21 @@ footer {
 	position: fixed;
 	bottom:0;
 	width: 100%;
+	
 }
+
+footer a {
+	color: var(--couleurHoverOrange);
+}
+
 .footer {
 visibility: hidden;
+}
+
+/***************** Choix Liste ******************/
+
+.choixListe{
+	margin-top: 15em;
 }
 
 
@@ -140,7 +168,6 @@ visibility: hidden;
     border-radius:18px;
     border:1px solid #979e93;
 	padding:0.5em;
-	text-shadow:0px 1px 0px #979e93;
 	font-size: larger;
 }
 
@@ -154,7 +181,6 @@ visibility: hidden;
     border-radius:18px;
     border:1px solid #979e93;
 	padding:0.5em;
-	text-shadow:0px 1px 0px #979e93;
 	font-size: larger;
 }
 
@@ -176,3 +202,24 @@ visibility: hidden;
 .retour:hover {
 	background-color: #434748;
 }
+
+/* ACCUEIL */
+.accueil {
+	align-items: center;
+}
+.presentation {
+	flex-direction: column;
+	color: var(--couleurHoverOrange);
+
+}
+.croissant {
+	margin: 1em;
+	flex:0.18;
+}
+.projet {
+	flex-direction: column;
+	margin: 3em;
+}
+
+
+

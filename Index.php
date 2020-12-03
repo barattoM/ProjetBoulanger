@@ -45,6 +45,11 @@ $routes=[
 
 	"ChoixListe"=>["PHP/VIEW/","ChoixListe","Choix de la liste"],
 
+	"contact"=>["PHP/VIEW/","contact","contact"],
+	"faq"=>["PHP/VIEW/","faq","faq"],
+	"adresse"=>["PHP/VIEW/","adresse","adresse"],
+	"reseaux"=>["PHP/VIEW/","reseaux","reseaux"],
+
 
 ];
 

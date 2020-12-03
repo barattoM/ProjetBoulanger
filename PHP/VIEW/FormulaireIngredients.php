@@ -1,4 +1,6 @@
 <?php
+if (isset($_SESSION['user']) && $_SESSION['user']->getRoleUser() == 3) {
+  
 
 if (isset($_GET['id']))
 {
@@ -12,13 +14,13 @@ if ($mode=="ajout")
     $listeIngredient=IngredientsManager::getList();
 
     echo'
-    <form method="POST" action="index.php?page=actionIngredients&mode=ajout">
+    <form method="POST" action="index.php?page=ActionsIngredients&mode=ajout">
       <div class="contenu">
         <div class="espace"></div>
         <div class="contenuLigne colonne">
           <div class="ligne colonne centrer">
-			<div class="label">libelle</div>
-			<input type="text" name="libelle" placeholder="Nom" required class="libelle"/>
+			<div class="label">'.texte('libelle').'</div>
+			<input type="text" class="libelle" name="libelleIngredient" placeholder="'.texte('libelle').'" required />
 		  </div>
 
         </div>
@@ -27,8 +29,8 @@ if ($mode=="ajout")
 	  <div class="contenuLigne">
 		<div class="espace"></div>
 		<div class="colonne">
-			<a href="index.php"><div class="retour centrer">Retour</div></a>
-			<input type="submit" name="submit" class="ajouter centrer"/>
+			<a href="index.php?page=ListeIngredients"><div class="retour centrer">'.texte('retour').'</div></a>
+			<input type="submit" name="submit" class="ajouter centrer" value="'.texte('ajouter').'"/>
 		</div>
 		<div class="espace"></div>
 	  </div>
@@ -43,16 +45,16 @@ else if($mode=="modif")
     $choix=IngredientsManager::findById($idRecherche);
 
     echo '
-    <form method="POST" action="index.php?page=actionIngredients&mode=modif">
+    <form method="POST" action="index.php?page=ActionsIngredients&mode=modif">
 
 
     <div class="contenu">
       <div class="espace"></div>
       <div class="contenuLigne colonne">
         <div class="ligne colonne centrer">
-          <div class="label">libelle</div>
-          <input type="hidden" name="id" value="'.$choix->getIdIngredient().'"/>
-          <input type="text" class="libelle" name="Libelle" value="'.$choix->getLibelleIngredient().'"/>
+          <div class="label">'.texte('libelle').'</div>
+          <input type="hidden" name="idIngredient" value="'.$choix->getIdIngredient().'"/>
+          <input type="text" class="libelle" name="libelleIngredient" value="'.$choix->getLibelleIngredient().'"/>
           
         </div>
 
@@ -62,8 +64,8 @@ else if($mode=="modif")
     <div class="contenuLigne">
       <div class="espace"></div>
       <div class="colonne">
-          <a href="index.php"><div class="retour centrer">Retour</div></a>
-          <input type="submit" name="submit" class="ajouter centrer"/>
+          <a href="index.php?page=ListeIngredients"><div class="retour centrer">'.texte('retour').'</div></a>
+          <input type="submit" name="submit" class="ajouter centrer" value="'.texte('modifier').'"/>
       </div>
       <div class="espace"></div>
     </div>
@@ -80,16 +82,18 @@ else if($mode=="delete")
     $choix=IngredientsManager::findById($idRecherche);
 
     echo '
-    <form method="POST" action="index.php?page=actionIngredients&mode=delete">
+    <form method="POST" action="index.php?page=ActionsIngredients&mode=delete">
 
 
     <div class="contenu">
       <div class="espace"></div>
       <div class="contenuLigne colonne">
         <div class="ligne colonne centrer">
-          <div class="label">libelle</div>
-          <input type="text" class="libelle" name="Libelle" value="'.$id->getLibelleIngredient().'"disabled/>
+          <div class="label">'.texte('libelle').'</div>
+          <input type="text" class="libelle" name="libelleIngredient" value="'.$choix->getLibelleIngredient().'"disabled/>
         </div>
+
+        <input type="hidden" name="idIngredient" value="'.$choix->getIdIngredient().'"/>
 
       </div>
       <div class="espace"></div>
@@ -97,10 +101,13 @@ else if($mode=="delete")
     <div class="contenuLigne">
       <div class="espace"></div>
       <div class="colonne">
-          <a href="index.php"><div class="retour centrer">Retour</div></a>
-          <input type="submit" name="Supprimer" class="ajouter centrer" value="Supprimer"/>
+          <a href="index.php?page=ListeIngredients"><div class="retour centrer">'.texte('retour').'</div></a>
+          <input type="submit" name="Supprimer" class="ajouter centrer" value="'.texte('supprimer').'"/>
       </div>
       <div class="espace"></div>
     </div>
   </form>';
 } 
+} else {
+  header("location:index.php?page=ListeProduits");
+}

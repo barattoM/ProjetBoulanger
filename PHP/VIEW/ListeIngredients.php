@@ -1,11 +1,14 @@
 <?php
-$ingredients = IngredientsManager::getList();
 
+if (isset($_SESSION['user']) && $_SESSION['user']->getRoleUser() == 3){
+
+$ingredients = IngredientsManager::getList();
 echo '
+
 <div class="contenu colonne">
 <div class="contenuLigne">
 <div class="espace"></div>
-<a href="index.php?page=FormulaireIngredients&mode=ajout"><div class="ajouter centrer">Ajouter</div> </a>
+<a href="index.php?page=FormulaireIngredients&mode=ajout"><div class="ajouter centrer">'.texte("ajouter").'</div> </a>
 <div class="espace"></div>
 </div>
 <div class="colonne">
@@ -19,15 +22,30 @@ echo '
 <div class="contenuLigne">
 <div class="libelle centrer">'.$unIngredient->getLibelleIngredient().'</div>
 <div class="espace"></div>
-<a href="index.php?page=FormulaireIngredients&mode=modif&id='.$unIngredient->getIdIngredient().'"><div class="modifier centrer">Modifier</div></a>
+<a href="index.php?page=FormulaireIngredients&mode=modif&id='.$unIngredient->getIdIngredient().'"><div class="modifier centrer">'.texte("modifier").'</div></a>
 <div class="espace"></div>
-<a href="index.php?page=ActionIngredients&mode=delete&id='.$unIngredient->getIdIngredient().'"><div class="supprimer centrer">Supprimer</div></a>
+<a href="index.php?page=FormulaireIngredients&mode=delete&id='.$unIngredient->getIdIngredient().'"><div class="supprimer centrer">'.texte("supprimer").'</div></a>
 </div>
-<div class="espace"></div>';      
-}
+';}
+echo'
+
+<div class="espace"></div>';
+      
+
 
 echo '
 </div>
+<div class="contenuLigne">
+<div class="espace"></div>
+<a href="index.php?page=ChoixListe">
+          <div class="retour centrer">'.texte("retour").'</div>
+    </a>
+<div class="espace"></div>
+</div>
+</div>
 </div>
 ';
+}else {
+    header("location:index.php?page=ListeProduits");
+} ;
 
