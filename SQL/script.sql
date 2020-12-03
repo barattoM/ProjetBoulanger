@@ -80,29 +80,29 @@ ALTER TABLE boulangerie.consultations ADD CONSTRAINT consultations_produits_FK F
 -- Insertion dans l'ordre
 
 INSERT INTO produits (idProduit, libelleProduit, datePeremptionProduit, prixProduit) VALUES
-(1, 'baguette', '2020-12-15', 1);
-(2, 'chocolatine', '2020-12-12', 2);
-(3, 'croissant', '2025-12-16', 200);
-(4, 'sandwich', '2020-12-11', 5);
-(5, 'cookie', '2020-12-12', 4);
-(6, 'chocolatine', '2020-12-13', 3);
+(1, 'baguette', '2020-12-15', 1),
+(2, 'chocolatine', '2020-12-12', 2),
+(3, 'croissant', '2025-12-16', 200),
+(4, 'sandwich', '2020-12-11', 5),
+(5, 'cookie', '2020-12-12', 4),
+(6, 'croissantine', '2020-12-13', 3),
 (7, 'pain', '2020-12-10', 5);
 
 INSERT INTO ingredients (idIngredient, libelleIngredient) VALUES
-(1, 'farine');
-(2, 'oeuf');
-(3, 'beurre');
-(4, 'sucre');
-(5, 'levure');
-(6, 'chocolat');
-(7, 'sel');
-(8, 'garnitures');
+(1, 'farine'),
+(2, 'oeuf'),
+(3, 'beurre'),
+(4, 'sucre'),
+(5, 'levure'),
+(6, 'chocolat'),
+(7, 'sel'),
+(8, 'garnitures'),
 (9, 'levain');
 
 INSERT INTO users (idUser, nomUser, prenomUser, pseudoUser, mdpUser, adresseMailUser, roleUser) VALUES
-(1, 'Cugny', 'Maxime', 'Maxina', 'Glrv56zc', 'maxime.cgn@gmail.com', 1);
-(2, 'Baratto', 'Marvine', 'Marvina', 'cookies', 'baratto.m@gmail.com', 2);
-(3, 'Aarous', 'Sofiane', 'Sofia', '1234', 'sofiane.a@gmail.com', 3);
+(1, 'Cugny', 'Maxime', 'Maxina', 'Glrv56zc', 'maxime.cgn@gmail.com', 1),
+(2, 'Baratto', 'Marvine', 'Marvina', 'cookies', 'baratto.m@gmail.com', 2),
+(3, 'Aarous', 'Sofiane', 'Sofia', '1234', 'sofiane.a@gmail.com', 3),
 (4, 'Laforce', 'Amanda', 'Armando', 'motdepasse', 'amanda.l@gmail.com', 1);
 
 INSERT INTO traductions (idTraduction, codeTexte, codeLangue, texte) VALUES
@@ -139,22 +139,22 @@ INSERT INTO traductions (idTraduction, codeTexte, codeLangue, texte) VALUES
 (null, 'Prenom', 'FR', 'Prénom'),
 (null, 'Prenom', 'EN', 'First name'),
 (null, 'Pseudo', 'FR', 'Pseudo'),
-(null, 'pseudo', 'EN', 'Pseudo')
+(null, 'pseudo', 'EN', 'Pseudo'),
 (null, 'mdp', 'FR', 'Mot de passe'),
 (null, 'mdp', 'EN', 'Password'),
 (null, 'mail', 'FR', 'Adresse mail'),
-(null, 'mail', 'EN', 'Mail')
+(null, 'mail', 'EN', 'Mail'),
 (null, 'deconnexion', 'FR', 'Deconnexion'),
 (null, 'deconnexion', 'EN', 'Log out');
 
 
 INSERT INTO contenances (idContenance, idProduit, idIngredient) VALUES
-(1, 1, 2);
-(2, 2, 2);
-(3, 3, 1);
-(4, 4, 3);
+(1, 1, 2),
+(2, 2, 2),
+(3, 3, 1),
+(4, 4, 3),
 (5, 1, 4);
 
 INSERT INTO consultations (idConsultation, idUser, idProduit) VALUES
-(1, 1, 3);
+(1, 1, 3),
 (2, 2, 4);
