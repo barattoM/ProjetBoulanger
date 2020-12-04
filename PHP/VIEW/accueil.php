@@ -2,7 +2,7 @@
 echo '
 <div class="accueil">
 
-<div class="croissant"><img src="IMG/croissant2.png" alt="CROISSANT"/></div>
+<div class="croissant2"><img src="IMG/croissant2.png" alt="CROISSANT"/></div>
 
 <div class="presentation">
 

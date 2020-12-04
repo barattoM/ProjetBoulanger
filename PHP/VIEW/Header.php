@@ -23,6 +23,7 @@ if (substr($uri, strlen($uri) - 1) == "/") {
 
       <?php
 
+
       // Ne pas afficher l'icone de la langue actuelle
       if (isset($_GET["lang"]))
       {

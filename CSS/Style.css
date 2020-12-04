@@ -10,6 +10,7 @@ html, body {
 	font-family: Helvetica, Arial, sans-serif;
 	color:var(--couleurPolice);
 	background-color: whitesmoke;
+	
 }
 
 
@@ -221,5 +222,8 @@ visibility: hidden;
 	margin: 3em;
 }
 
-
+.croissant2{
+		margin: 1em;
+		flex:0.18;
+}
 

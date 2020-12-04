@@ -1,0 +1,23 @@
+footer,.footer{
+    flex-direction: column;
+}
+
+.titre{
+    flex:3;
+}
+
+.accueil{
+    flex-direction: column;
+}
+
+.croissant2{
+    display:none;
+}
+
+.image{
+    display:none;
+}
+
+.resp{
+    flex-direction: column;
+}

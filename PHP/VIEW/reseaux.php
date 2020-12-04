@@ -2,7 +2,7 @@
 echo texte('findus');
 echo '<div class="accueil block">
 
-<div class="centrer">
+<div class="centrer resp">
 <div class="espace"></div>
 <div class="croissant"><a href="https://www.facebook.com/Boulanger.Electromenager.Multimedia/timeline/" target="_blank"><img src="IMG/facebook.png" alt="BOULANGER"/></a></div>
 <div class="espace"></div>
@@ -17,7 +17,7 @@ echo '<div class="accueil block">
 </div>
 <div class="espaceH"></div>
 
-<div class="centrer">
+<div class="centrer resp">
 <div class="espace"></div>
 <div class="croissant"><a href="https://www.boulanger.com/" target="_blank"><img src="IMG/flickr.png" alt="BOULANGER"/></a></div>
 <div class="espace"></div>
