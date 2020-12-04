@@ -25,28 +25,28 @@ if (empty($liste)==false)
 
     echo '
     <div class="contenuLigne">
-    <div class="espace"></div>
+    <div class="espacePB"></div>
     <div class="libelle centrer">'.$unIngredient->getLibelleIngredient().'</div>
-    <div class="espace"></div>
+    <div class="espacePB"></div>
     </div>
     ';
     } 
 }else {
         echo '<div class="contenuLigne">';
-        echo '<div class="espace"></div>';
+        echo '<div class="espacePB"></div>';
         echo '<div class="libelle centrer">'.texte('noningredient').'</div>';
-        echo '<div class="espace"></div>';
+        echo '<div class="espacePB"></div>';
         echo '</div>';
     }
-    echo'<div class="espace"></div>';
+    echo'<div class="espacePB"></div>';
     echo '
     </div>
     <div class="contenuLigne">
-    <div class="espace"></div>
-    <a href="index.php?page=ListeProduits">
+    <div class="espacePB"></div>
+    <a href="index.php?page=FormulaireProduits&mode=detail&id='.$_GET['idProduit'].'">
               <div class="retour centrer">'.texte('retour').'</div>
         </a>
-    <div class="espace"></div>
+    <div class="espacePB"></div>
     </div>
     </div>
     </div>';
