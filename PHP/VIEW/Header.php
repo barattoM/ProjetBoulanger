@@ -25,9 +25,9 @@ if (substr($uri, strlen($uri) - 1) == "/") {
 
 
       // Ne pas afficher l'icone de la langue actuelle
-      if (isset($_GET["lang"]))
+      if (isset($_SESSION["lang"]))
       {
-        if ($_GET["lang"] == "EN")
+        if ($_SESSION["lang"] == "EN")
         {
           echo '<a href="'.$uri.'lang=FR"><img src="IMG/french.png" alt="Petit marin français"/></a>';
         }
@@ -38,7 +38,15 @@ if (substr($uri, strlen($uri) - 1) == "/") {
       } 
       else 
       {
-        echo '<a href="'.$uri.'lang=FR"><img src="IMG/french.png" alt="Petit marin français"/></a>';
+        echo '<a href="'.$uri.'lang=EN"><img src="IMG/english.png" alt="Petit soldat anglais"/></a>';
+      }
+      if(isset($_GET['lang'])){
+        if($_GET['lang']=="EN"){
+          $_SESSION["lang"] = "EN";
+        }
+        else{
+          $_SESSION["lang"] = "FR";
+        }
       }
 
 
