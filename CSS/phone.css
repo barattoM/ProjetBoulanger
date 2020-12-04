@@ -1,0 +1,28 @@
+footer,.footer{
+    flex-direction: column;
+}
+
+.langue{
+    min-width: 3em;
+    flex: 5 ;
+}
+
+.titre{
+    flex:auto;
+}
+.image{
+    min-width: 3em;
+}
+
+.accueil{
+    flex-direction: column;
+}
+
+.croissant2{
+    display:none;
+}
+
+
+.resp{
+    flex-direction: column;
+}
