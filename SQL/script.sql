@@ -229,9 +229,25 @@ INSERT INTO contenances (idContenance, idProduit, idIngredient) VALUES
 (11, 3, 2);
 (12, 3, 4);
 (13, 3, 5);
+(14, 4, 1);
+(15, 4, 5);
+(16, 4, 7);
+(17, 4, 8);
+(18, 5, 6);
+(19, 5, 1);
+(20, 5, 6);
+(21, 5, 2);
+(22, 5, 3);
+(23, 5, 4);
+(24, 6, 1);
+(25, 6, 2);
+(26, 6, 3);
+(27, 6, 7);
+(28, 7, 1);
+(29, 7, 5);
+(30, 7, 7);
+(30, 7, 9);
 
 INSERT INTO consultations (idConsultation, idUser, idProduit) VALUES
 (1, 1, 3),
 (2, 2, 4);
-
-INSERT INTO `users` (`idUser`, `nomUser`, `prenomUser`, `pseudoUser`, `mdpUser`, `adresseMailUser`, `roleUser`) VALUES (NULL, 'admin', 'admin', 'admin', 'ec6a6536ca304edf844d1d248a4f08dc', 'admin', '3') 
