@@ -27,12 +27,12 @@ if ($mode=="ajout")
         <div class="espace"></div>
 	  </div>
 	  <div class="contenuLigne">
-		<div class="espace"></div>
+		<div class="espacePB"></div>
 		<div class="colonne">
-			<a href="index.php?page=ListeIngredients"><div class="retour centrer">'.texte('retour').'</div></a>
-			<input type="submit" name="submit" class="ajouter centrer" value="'.texte('ajouter').'"/>
+			<a href="index.php?page=ListeIngredients"><div class="retour centrer contenuLigne">'.texte('retour').'</div></a>
+			<input type="submit" name="submit" class="ajouter centrer contenuLigne" value="'.texte('ajouter').'"/>
 		</div>
-		<div class="espace"></div>
+		<div class="espacePB"></div>
 	  </div>
     </form>';
     
@@ -62,12 +62,12 @@ else if($mode=="modif")
       <div class="espace"></div>
     </div>
     <div class="contenuLigne">
-      <div class="espace"></div>
+      <div class="espacePB"></div>
       <div class="colonne">
-          <a href="index.php?page=ListeIngredients"><div class="retour centrer">'.texte('retour').'</div></a>
-          <input type="submit" name="submit" class="ajouter centrer" value="'.texte('modifier').'"/>
+          <a href="index.php?page=ListeIngredients"><div class="retour centrer contenuLigne">'.texte('retour').'</div></a>
+          <input type="submit" name="submit" class="ajouter centrer contenuLigne" value="'.texte('modifier').'"/>
       </div>
-      <div class="espace"></div>
+      <div class="espacePB"></div>
     </div>
   </form>';
 } 
@@ -99,12 +99,12 @@ else if($mode=="delete")
       <div class="espace"></div>
     </div>
     <div class="contenuLigne">
-      <div class="espace"></div>
+      <div class="espacePB"></div>
       <div class="colonne">
-          <a href="index.php?page=ListeIngredients"><div class="retour centrer">'.texte('retour').'</div></a>
-          <input type="submit" name="Supprimer" class="ajouter centrer" value="'.texte('supprimer').'"/>
+          <a href="index.php?page=ListeIngredients"><div class="retour centrer contenuLigne">'.texte('retour').'</div></a>
+          <input type="submit" name="Supprimer" class="ajouter centrer contenuLigne" value="'.texte('supprimer').'"/>
       </div>
-      <div class="espace"></div>
+      <div class="espacePB"></div>
     </div>
   </form>';
 } 

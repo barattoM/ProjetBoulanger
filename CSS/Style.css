@@ -28,7 +28,6 @@ div, header, footer, nav, article, input, a{
 a {
 	color: black;
 	text-decoration: none;
-	
 }
 a:hover {
 	color:whitesmoke;
@@ -112,12 +111,13 @@ visibility: hidden;
 .libelle {
 	background:linear-gradient(to bottom, #e8f7ec 5%, #979e93 100%);
     background-color:#979e93;
-    border-radius:18px;
+    border-radius:10px;
     border:1px solid #979e93;
 	padding:0.5em;
     text-shadow:0px 1px 0px #979e93;
 	color:black;
 	font-size: larger;
+	flex:0.5;
 }
 
 .contenuLigne {
@@ -136,7 +136,7 @@ visibility: hidden;
 
 .ajouter {
 	background:#52943e;
-    border-radius:18px;
+    border-radius:10px;
     border:1px solid #979e93;
 	padding:0.5em;
 	text-shadow:0px 1px 0px #979e93;
@@ -151,7 +151,7 @@ visibility: hidden;
 
 .detail {
 	background:var(--couleurHoverOrange);
-    border-radius:18px;
+    border-radius:10px;
     border:1px solid #979e93;
 	padding:0.5em;
 	text-shadow:0px 1px 0px #979e93;
@@ -165,7 +165,7 @@ visibility: hidden;
 
 .modifier {
 	background: #4b93ff;
-    border-radius:18px;
+    border-radius:10px;
     border:1px solid #979e93;
 	padding:0.5em;
 	font-size: larger;
@@ -178,7 +178,7 @@ visibility: hidden;
 
 .supprimer {
 	background:rgb(218, 41, 41);
-    border-radius:18px;
+    border-radius:10px;
     border:1px solid #979e93;
 	padding:0.5em;
 	font-size: larger;
@@ -191,7 +191,7 @@ visibility: hidden;
 
 .retour {
 	background:rgb(44, 42, 42);
-    border-radius:18px;
+    border-radius:10px;
     border:1px solid #979e93;
 	padding:0.5em;
 	text-shadow:0px 1px 0px #979e93;
@@ -226,3 +226,22 @@ visibility: hidden;
 		flex:0.18;
 }
 
+.espacePB{
+	flex:4;
+}
+
+.espaceMB{
+	flex:1;
+}
+
+.grandFlex{
+	flex:0.7;
+}
+
+.petitFlex{
+	flex:0.8;
+}
+
+.miniFlex{
+	flex:0.5;
+}

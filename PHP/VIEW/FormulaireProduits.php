@@ -66,14 +66,14 @@ $idProduit = $choix->getIdProduit();
     </div>
 
     <div class="contenuLigne"> 
-    <div class="espace"></div>
+    <div class="espacePB"></div>
     <div class="colonne">
     <a href="index.php?page=ListeProduits">
           <div class="retour centrer"><?php echo texte('retour');?></div>
     </a>
     <?php if($mode=="detail"){
         echo '<a href=index.php?page=ListeIngredientsProduit&idProduit='.$choix->getIdProduit().'>
-          <div class="retour centrer">'.texte('listeIngredients').'</div>
+          <div class="retour centrer contenuLigne">'.texte('listeIngredients').'</div>
     </a>';
     }
     
@@ -83,17 +83,17 @@ $idProduit = $choix->getIdProduit();
 	switch ($mode) {
 		case "ajout":
 			{   
-                echo '<input type="submit" name="Ajouter" class="ajouter centrer" value="'.texte('ajouter').'"/>';
+                echo '<input type="submit" name="Ajouter" class="ajouter centrer contenuLigne" value="'.texte('ajouter').'"/>';
                 break;
 			}
 		case "modif":
 			{
-                echo '<input type="submit" name="Modifier" class="ajouter centrer" value="'.texte('modifier').'"/>';
+                echo '<input type="submit" name="Modifier" class="ajouter centrer contenuLigne" value="'.texte('modifier').'"/>';
                 break;
 			}
 		case "delete":
 			{
-                echo '<input type="submit" name="Supprimer" class="ajouter centrer" value="'.texte('supprimer').'"/>';
+                echo '<input type="submit" name="Supprimer" class="ajouter centrer contenuLigne" value="'.texte('supprimer').'"/>';
                 break;
 			}
     }
@@ -102,7 +102,7 @@ $idProduit = $choix->getIdProduit();
 }
 ?>
     </div>
-    <div class="espace"></div>
+    <div class="espacePB"></div>
   </div>
 </form>
 

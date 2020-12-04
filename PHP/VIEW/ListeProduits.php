@@ -5,13 +5,13 @@ if (!isset($_SESSION['user'])){
 $produits = ProduitsManager::getList();
 echo '<div class="contenu colonne">
       <div class="contenuLigne">
-        <div class="espace"></div>';
+        <div class="espacePB"></div>';
 if (isset($_SESSION['user']) && $_SESSION['user']->getRoleUser() == 3) {
     echo '
          <a href="index.php?page=FormulaireProduits&mode=ajout"><div class="ajouter centrer">'.texte("ajouter").'</div> </a>
         ';}
 echo '
-         <div class="espace"></div>
+         <div class="espacePB"></div>
       </div>
       <div class="colonne">';
 foreach ($produits as $unProduit) {
@@ -40,11 +40,11 @@ foreach ($produits as $unProduit) {
 if ($_SESSION['user']->getRoleUser() == 3){
   echo'
 <div class="contenuLigne">
-<div class="espace"></div>
+<div class="espacePB"></div>
 <a href="index.php?page=ChoixListe">
         <div class="retour centrer">'.texte("retour").'</div>
   </a>
-<div class="espace"></div>
+<div class="espacePB"></div>
 </div>
 </div>
 </div>

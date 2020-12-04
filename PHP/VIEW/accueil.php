@@ -33,17 +33,17 @@ if (isset($_SESSION['user'])){
 if ($_SESSION['user']->getRoleUser() < 3){
     echo'
 <div class="contenuLigne">
-    <div class="espace"></div>
+    <div class="espacePB"></div>
     <a href="index.php?page=ListeProduits"><div class="libelle centrer">'.texte('listeProduits').'</div></a>
-    <div class="espace"></div>
+    <div class="espacePB"></div>
 </div>';
 }
 if ($_SESSION['user']->getRoleUser() == 3){
     echo'
 <div class="contenuLigne">
-    <div class="espace"></div>
+    <div class="espacePB"></div>
     <a href="index.php?page=ChoixListe"><div class="libelle centrer">'.texte('choixDesListes').'</div></a>
-    <div class="espace"></div>
+    <div class="espacePB"></div>
 </div>
 
 ';
