@@ -57,14 +57,16 @@ img, video {
 header, footer {
 	background-color: var(--couleurPolice);
 }
+header{
+    flex: auto;
+}
 
 .titre {
 	flex: 10;
 	color: var(--couleurHoverOrange);
 }
-
 .image {
-	flex: 2;
+	flex: auto;
 }
 
 /*************** BOUTON ****************/

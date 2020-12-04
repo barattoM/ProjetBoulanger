@@ -19,7 +19,7 @@ if (substr($uri, strlen($uri) - 1) == "/") {
     <div class="titre centrer">
       <h1><?php echo texte($titre); ?></h1>
     </div>
-    <div class="centrer">
+    <div class="centrer langue">
 
       <?php
 

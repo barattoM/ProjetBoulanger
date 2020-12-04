@@ -2,8 +2,16 @@ footer,.footer{
     flex-direction: column;
 }
 
+.langue{
+    min-width: 3em;
+    flex: 5 ;
+}
+
 .titre{
-    flex:3;
+    flex:auto;
+}
+.image{
+    min-width: 3em;
 }
 
 .accueil{
@@ -14,9 +22,6 @@ footer,.footer{
     display:none;
 }
 
-.image{
-    display:none;
-}
 
 .resp{
     flex-direction: column;
