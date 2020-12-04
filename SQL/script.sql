@@ -232,7 +232,7 @@ INSERT INTO contenances (idContenance, idProduit, idIngredient) VALUES
 (14, 4, 1),
 (15, 4, 5),
 (16, 4, 7),
-(17, 4, 8);
+(17, 4, 8),
 (18, 5, 6),
 (19, 5, 1),
 (20, 5, 6),
@@ -246,7 +246,7 @@ INSERT INTO contenances (idContenance, idProduit, idIngredient) VALUES
 (28, 7, 1),
 (29, 7, 5),
 (30, 7, 7),
-(30, 7, 9);
+(31, 7, 9);
 
 INSERT INTO consultations (idConsultation, idUser, idProduit) VALUES
 (1, 1, 3),
