@@ -59,11 +59,11 @@ header, footer {
 }
 
 .titre {
-	flex: 8;
+	flex: 20;
 	color: var(--couleurHoverOrange);
 }
 .image {
-	flex: 0.1 auto;
+	flex: 0.2 8 auto;
 }
 
 /*************** BOUTON ****************/
