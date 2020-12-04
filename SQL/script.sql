@@ -107,7 +107,7 @@ INSERT INTO users (idUser, nomUser, prenomUser, pseudoUser, mdpUser, adresseMail
 
 INSERT INTO traductions (idTraduction, codeTexte, codeLangue, texte) VALUES
 
-(null, 'Accueil', 'FR', 'Acceuil'),
+(null, 'Accueil', 'FR', 'Accueil'),
 (null, 'Accueil', 'EN', 'Home'),
 (null, 'bvn', 'FR', 'Bienvenue'),
 (null, 'bvn', 'EN', 'Welcome'),
@@ -216,11 +216,19 @@ INSERT INTO traductions (idTraduction, codeTexte, codeLangue, texte) VALUES
 
 
 INSERT INTO contenances (idContenance, idProduit, idIngredient) VALUES
-(1, 1, 2),
-(2, 2, 2),
-(3, 3, 1),
-(4, 4, 3),
-(5, 1, 4);
+(1, 1, 5),
+(2, 1, 1),
+(3, 1, 9),
+(4, 1, 7),
+(5, 2, 1);
+(6, 2, 5);
+(7, 2, 9);
+(8, 2, 7);
+(9, 2, 6);
+(10, 3, 1);
+(11, 3, 2);
+(12, 3, 4);
+(13, 3, 5);
 
 INSERT INTO consultations (idConsultation, idUser, idProduit) VALUES
 (1, 1, 3),
